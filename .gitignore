@@ -1,0 +1,26 @@
+# Match data is gated and must never be committed to a public repo
+data/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Intermediate feature files, not needed to reproduce
+*.npz
+*.npy
+atd_features.npz
+atd_derived.npz
+v6_features.npz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Test and experiment outputs
+test_*/
+test_results*/
+synthetic_gt.csv
+synthetic_atd.txt
